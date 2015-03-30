@@ -1,3 +1,4 @@
+require("../app/http_server.js");
 var request = require("request");
 var base_url = "http://localhost:3000/";
 
@@ -30,3 +31,4 @@ describe("Execute command and return in http request", function(){
 		});
 	});
 });
+
