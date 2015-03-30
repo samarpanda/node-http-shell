@@ -11,7 +11,7 @@ app.get("/test-exec", function(req, res){
 		if(!err){
 			res.send(response);
 		}else {
-			res.send("Please check your test script");
+			res.send("Error: ", err);
 		}
 	});
 });
@@ -21,7 +21,7 @@ app.get("/exec", function(req, res){
 		if(!err){
 			res.send(response);
 		}else {
-			res.send("Please check your script");
+			res.send("Error: ", err);
 		}
 	});
 });

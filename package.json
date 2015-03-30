@@ -4,7 +4,8 @@
   "description": "Http pixel logs",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/jasmine-node spec"
+    "test": "./node_modules/.bin/jasmine-node spec",
+    "start": "node app/http_server.js"
   },
   "author": "Samar Panda <samar.panda84@gmail.com> (http://samarpanda.com)",
   "license": "ISC",

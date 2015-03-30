@@ -5,7 +5,7 @@ var result = function(command, cb){
 		if(err != null){
 			return cb(new Error(err), null);
 		}else if(typeof(stderr) != "string"){
-			cb(new Error(stderr), null);
+			return cb(new Error(stderr), null);
 		}else{
 			return cb(null, stdout);
 		}
