@@ -10,8 +10,7 @@ $ npm start
 ## Usage
 
 ```js
-var express = require('express');
-var app = express();
+var app = require('express')();
 var execProcess = require("../app/exec_process.js");
 var commandStr = "sh shell_scripts/temp.sh";//Shell script command will be executed.
 

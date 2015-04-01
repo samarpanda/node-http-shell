@@ -1,5 +1,4 @@
-var express = require('express');
-var app = express();
+var app = require('express')();
 var execProcess = require("../app/exec_process.js");
 
 app.get("/", function(req, res){
