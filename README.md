@@ -1,4 +1,4 @@
-## google-search-trends [![Build Status](https://travis-ci.org/samarpanda/node-http-shell.svg?branch=master)](https://travis-ci.org/samarpanda/node-http-shell)
+## node-http-shell [![Build Status](https://travis-ci.org/samarpanda/node-http-shell.svg?branch=master)](https://travis-ci.org/samarpanda/node-http-shell)
 
 > Get shell script output in browser
 
