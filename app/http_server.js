@@ -26,4 +26,5 @@ app.get("/exec", function(req, res){
 	});
 });
 
-app.listen(3000);
+var http = app.listen(3000);
+exports.http = http;

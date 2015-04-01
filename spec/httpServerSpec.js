@@ -1,8 +1,20 @@
-require("../app/http_server.js");
+var server = require("../app/http_server.js");
 var request = require("request");
 var base_url = "http://localhost:3000/";
 
 describe("HTTP Pixel log server : GET calls", function(){
+	var count = 0;
+
+	beforeEach(function(){
+		count++;
+	});
+
+	afterEach(function(){
+		//Hack to close the server after all http calls.
+		if(count === 3){
+			server.http.close();
+		}
+	});
 
 	it("Returns status code 200", function(done){
 		request.get(base_url, function(err, res, body){
