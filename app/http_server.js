@@ -1,5 +1,6 @@
 var app = require('express')();
 var execProcess = require("../app/exec_process.js");
+var port = process.env.PORT || 3000;
 
 app.get("/", function(req, res){
 	res.send("Server configured.");
@@ -25,5 +26,6 @@ app.get("/exec", function(req, res){
 	});
 });
 
-var http = app.listen(3000);
+// var http = app.listen(3000);
+var http = app.listen(port);
 exports.http = http;
