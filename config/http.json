@@ -1,0 +1,10 @@
+{
+    "test-exec": {
+        "url": "/test-exec",
+        "cmd": "sh shell_scripts/temp.sh"
+    },
+    "exec": {
+        "url": "/exec",
+        "cmd": "sh shell_scripts/tail_logs.sh"
+    }
+}
