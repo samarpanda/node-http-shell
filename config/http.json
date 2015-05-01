@@ -1,9 +1,11 @@
 {
     "test-exec": {
+    	"type": "exec",
         "url": "/test-exec",
         "cmd": "sh shell_scripts/temp.sh"
     },
     "exec": {
+    	"type": "spawn",
         "url": "/exec",
         "cmd": "sh shell_scripts/tail_logs.sh"
     }

@@ -1,7 +1,7 @@
 var app = require('express')();
-var execProcess = require("../app/exec_process.js");
-var port = process.env.PORT || 3000;
 var httpJson = require('../config/http.json');
+var handle_process = require('../app/handle_process.js');
+var port = process.env.PORT || 3000;
 
 app.get("/", function(req, res){
 	res.send("Server configured.");
@@ -20,15 +20,9 @@ var httpArr = Object.keys(httpJson).map(function(k){
  */
 httpArr.map(function(o){
 	app.get(o["url"], function(req, res){
-		execProcess.result(o["cmd"], function(err, response){
-			if(!err){
-				res.send(response);
-			}else {
-				res.send("Error: ", err);
-			}
-		});
+		handle_process.result(o, req, res);
 	});
-})
+});
 
 var http = app.listen(port);
 exports.http = http;
