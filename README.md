@@ -8,11 +8,13 @@ $ npm start
 ```
 
 ## Usage 1
-Look for this file `app/http.json`
+Pretty easy to modify and implement. Look for configuration file `app/http.json`.
 
 1. `type` -> Options `exec` & `spawn`
 2. `cmd`  -> Run the specified command
 3. `url`  -> url to publish the output
+
+And you are good to go.
 
 ## Usage 2
 For larger and streaming output
